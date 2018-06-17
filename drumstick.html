@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="style.css"> 
+ 
+</head>
+<body>
+
+
+  <div class="keys">
+    <div data-key="65" class="key" id="A"   onClick="makeSound(this.id)" >
+      <kbd>A</kbd>
+      <span class="sound">clap</span>
+    </div>
+	<div data-key="83" class="key" id="S" onClick="makeSound(this.id)">
+      <kbd>S</kbd>
+      <span class="sound">hihat</span>
+    </div>
+    <div data-key="68" class="key" id="D" onClick="makeSound(this.id)">
+      <kbd>D</kbd>
+      <span class="sound">kick</span>
+    </div>
+    <div data-key="70" class="key" id="F" onClick="makeSound(this.id)">
+      <kbd>F</kbd>
+      <span class="sound">openhat</span>
+    </div>
+    <div data-key="71" class="key" id="G" onClick="makeSound(this.id)">
+      <kbd>G</kbd>
+      <span class="sound">boom</span>
+    </div>
+    <div data-key="72" class="key" id="H" onClick="makeSound(this.id)">
+      <kbd>H</kbd>
+      <span class="sound">ride</span>
+    </div>
+    <div data-key="74" class="key" id="J" onClick="makeSound(this.id)">
+      <kbd>J</kbd>
+      <span class="sound">snare</span>
+    </div>
+    <div data-key="75" class="key" id="K" onClick="makeSound(this.id)">
+      <kbd>K</kbd>
+      <span class="sound">tom</span>
+    </div>
+    <div data-key="76" class="key" id="L" onClick="makeSound(this.id)">
+      <kbd>L</kbd>
+      <span class="sound">tink</span>
+    </div>
+   
+  </div>
+
+  <audio data-key="65" id="audio_A" src="sounds\aliya_scar_closed_hat_5.wav"></audio>
+  <audio data-key="83" id="audio_S" src="sounds\airy_hats.wav"></audio>
+  <audio data-key="68" id="audio_D" src="sounds\909_long_open_hat.wav"></audio>
+  <audio data-key="70" id="audio_F" src="sounds\ancient_8_hat.wav"></audio>
+  <audio data-key="71" id="audio_G" src="sounds\birth_of_the_hat.wav"></audio>
+  <audio data-key="72" id="audio_H" src="sounds\buzza_pedal_hit.wav"></audio>
+  <audio data-key="74" id="audio_J" src="sounds\closed_hat_splat.wav"></audio>
+  <audio data-key="75" id="audio_K" src="sounds\cryptic_master_open_hat_8082.wav"></audio>
+  <audio data-key="76" id="audio_L" src="sounds\909_new_hat.wav"></audio>
+ 
+
+<script src="index.js"></script>
+
+
+</body>
+</html>
